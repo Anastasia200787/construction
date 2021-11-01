@@ -1,0 +1,529 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url(../fonts/Gilroy-Regular.woff);
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(../fonts/Gilroy-Medium.woff);
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url(../fonts/Gilroy-SemiBold.woff);
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(../fonts/Gilroy-Bold.woff);
+}
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url(../fonts/Gilroy-ExtraBold.woff);
+}
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url(../fonts/Gilroy-Black.woff);
+}
+
+body {
+  font-family: "Gilroy-Medium";
+  line-height: 1.25;
+}
+
+.header {
+  padding: 30px 0 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_official {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: 52px;
+  color: #e1e1e1;
+  font-family: "Gilroy-Bold";
+  text-decoration: none;
+}
+
+.header_official_text {
+  font-size: 14px;
+  color: #5d5d5d;
+  width: 220px;
+  border-left: 2px solid #89afef;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+}
+
+.socials_item {
+  margin: 0 9px;
+}
+.socials_link {
+  background: #2dd038;
+  box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.socials_link img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.viber {
+  background: #7b519d;
+  box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+}
+
+.telegram {
+  background: #5bbaf0;
+  box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+}
+
+.header_contacts {
+  display: flex;
+  align-items: center;
+}
+.header_contacts div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 28px;
+  align-items: flex-end;
+}
+
+.header_contacts_tel {
+  font-size: 20px;
+  font-family: "Gilroy-ExtraBold";
+  text-decoration: none;
+  color: #333333;
+}
+
+.tel_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.header_contacts_mail {
+  font-size: 17px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.mail_icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.btn {
+  border-radius: 3px;
+  font-family: "Gilroy-SemiBold";
+  font-size: 18px;
+  padding: 11px 27px;
+  border: none;
+  background: linear-gradient(90deg, #fdc261 0%, #eb9355 80.38%, #e88952 100%);
+  box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header_bottom {
+  margin-top: 41px;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu_link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.promo {
+  padding: 275px 0 150px;
+  background: #fafafb url(../img/wave.png) right top/ contain no-repeat;
+}
+
+.promo_title {
+  width: 675px;
+  font-size: 40px;
+  font-family: "Gilroy-Black";
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.promo_text {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.promo_text span {
+  font-family: "Gilroy-ExtraBold";
+}
+
+.promo_img {
+  width: 390px;
+  position: absolute;
+  right: 76px;
+  bottom: -154px;
+}
+.btn_blue {
+  border-radius: 3px;
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  padding: 16px 68px;
+  border: none;
+  background: linear-gradient(90deg, #8db7fc, #6c80cb);
+  box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.documents {
+  text-align: center;
+  padding: 46px 0 37px;
+  color: #333333;
+}
+.documents_title {
+  font-size: 36px;
+  font-family: "Gilroy-ExtraBold";
+}
+.documents_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.document_item {
+  width: 262px;
+  height: 190px;
+  background: #ffffff;
+  box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Gilroy-SemiBold";
+  color: #333333;
+  padding: 29px 30px;
+  text-align: center;
+}
+
+.document_item p {
+  font-size: 19px;
+  margin-top: 17px;
+}
+
+.advantages {
+  background: #f6f6f6;
+  padding: 42px 0 68px 0px;
+  color: #333333;
+}
+
+.advantages_items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.advantages_item {
+  width: 250px;
+  text-align: center;
+}
+
+.advantages_item_circle {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  margin: 0 auto;
+  position: relative;
+}
+
+.advantages_item_title {
+  margin: 15px 0;
+  font-family: "Gilroy-ExtraBold";
+  font-size: 22px;
+}
+
+.advantages_item_text {
+  font-weight: 500;
+  font-size: 17px;
+  font-family: "Gilroy-Medium";
+}
+
+.advantages_item_circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.programs {
+  text-align: center;
+  padding: 39px 0 75px;
+}
+
+.programs_title {
+  font-size: 36px;
+  font-family: "Gilroy-ExtraBold";
+  color: #333333;
+}
+
+.programs_items {
+  display: flex;
+  gap: 27px;
+  margin-top: 31px;
+}
+
+.programs_item {
+  width: 265px;
+  background: #ffffff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+  padding: 26px 25px;
+}
+
+.programs_item_title {
+  font-size: 19px;
+  font-family: "Gilroy-ExtraBold";
+  color: #333333;
+}
+
+.programs_item_price {
+  font-size: 22px;
+  font-family: "Gilroy-ExtraBold";
+  margin-top: 30px;
+}
+
+.programs_item_text {
+  font-size: 16px;
+  color: #53b43b;
+  font-family: "Gilroy-Medium";
+}
+
+.programs_item_text img {
+  margin-bottom: -3px;
+}
+
+.programs_buttons {
+  margin-top: 30px;
+}
+
+.programs_buttons button {
+  width: 11px;
+  height: 11px;
+  background: #e4e4e4;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.programs_buttons button.active {
+  background: #ffffff;
+  border: 2px solid #84aaed;
+}
+
+.samples {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 15px 0 52px;
+}
+
+.samples_title {
+  font-size: 36px;
+  font-family: "Gilroy-ExtraBold";
+  color: #333333;
+}
+
+.samples_slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 43px;
+}
+
+.sample_btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.samples_items {
+  display: flex;
+  justify-content: center;
+
+  gap: 37px;
+}
+
+.news {
+  text-align: center;
+  padding: 52px 0 70px;
+  color: #333333;
+}
+
+.news_title {
+  font-size: 36px;
+  font-family: "Gilroy-ExtraBold";
+}
+
+.news_items {
+  display: flex;
+  margin-top: 43px;
+  gap: 37px;
+}
+
+.news_item {
+  background: #ffffff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+  padding: 27px 23px 16px 24px;
+  text-align: left;
+}
+
+.news_item_big {
+  background: #fafafb url(../img/news/wave2.png) right top/ contain no-repeat;
+  color: #333333;
+  display: flex;
+  align-items: flex-start;
+}
+
+.news_item_big h3 {
+  font-size: 24px;
+  font-family: "Gilroy-Bold";
+}
+
+.news_item_big p {
+  font-size: 16px;
+  font-family: "Gilroy-Medium";
+  margin-top: 23px;
+}
+
+.news_item_img {
+  margin-right: -55px;
+  margin-bottom: 0;
+}
+
+.news_item h3 {
+  margin: 12px 0;
+}
+
+.news_item img {
+  margin-bottom: 12px;
+}
+.news_btn {
+  border-radius: 3px;
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  padding: 17px 58px 16px 57px;
+  background: #ffffff;
+  cursor: pointer;
+  border: 2px solid #6d81cc;
+  color: #6d81cc;
+  margin-top: 41px;
+}
+
+.footer {
+  background: #333333;
+  padding-top: 56px;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_item {
+  width: 350px;
+}
+
+.footer_item_list {
+  list-style: none;
+}
+
+.footer_item_list li {
+  margin-bottom: 15px;
+}
+
+.footer_item_list a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Gilroy-Regular";
+}
+
+.footer_item_list a img {
+  margin-right: 10px;
+  margin-bottom: -3px;
+}
+
+.footer_item_title {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Gilroy-Bold";
+  margin-bottom: 27px;
+}
+
+.footer_item_list .footer_item_whatsapp,
+.footer_item_list .footer_item_email {
+  margin-bottom: 30px;
+}
+
+.footer_logo {
+  font-size: 60px;
+  font-family: "Gilroy-ExtraBold";
+  color: rgba(255, 255, 255, 0.12653);
+  text-decoration: none;
+  margin-top: 52px;
+  display: inline-block;
+}
+
+.footer_copy {
+  border-top: 1px solid #4e4e4e;
+  margin-top: 60px;
+  padding: 20px 0;
+}
+
+.footer_copy_text {
+  font-size: 14px;
+  color: #565656;
+  text-align: center;
+}
